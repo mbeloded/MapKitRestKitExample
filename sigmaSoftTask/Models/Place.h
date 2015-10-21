@@ -13,7 +13,10 @@
 @interface Place : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *imageUrl;
 @property (nonatomic, strong) Location *location;
 @property (nonatomic, strong) Details  *details;
+
+-(NSArray *) convertToArray;
 
 @end

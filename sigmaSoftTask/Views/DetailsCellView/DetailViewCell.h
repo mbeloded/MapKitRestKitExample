@@ -10,4 +10,6 @@
 
 @interface DetailViewCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel * mainLabel;
+
 @end

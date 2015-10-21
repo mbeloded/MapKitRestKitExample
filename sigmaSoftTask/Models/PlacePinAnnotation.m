@@ -10,4 +10,6 @@
 
 @implementation PlacePinAnnotation
 
+@synthesize title, coordinate, subtitle;
+
 @end

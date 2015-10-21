@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuesbookVC"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PinView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSx-BM-83W">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pub" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSW-iH-R5O" userLabel="pinName">
+                            <rect key="frame" x="8" y="0.0" width="234" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="J4k-Z7-9d0"/>
+                                <constraint firstAttribute="width" constant="172" id="otJ-PV-LTS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="otJ-PV-LTS"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIF-OA-xJ9">
+                            <rect key="frame" x="250" y="0.0" width="30" height="60"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.38036309628326181" blue="0.17453740912360394" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="BlV-ot-Ie8"/>
+                                <constraint firstAttribute="height" constant="60" id="W0i-Su-Ir1"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="-10" minY="8" maxX="-10" maxY="8"/>
+                            <state key="normal" image="icon_nav_arrow_right">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xe8-gQ-4Sx" userLabel="pinLocation">
+                            <rect key="frame" x="8" y="30" width="234" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="172" id="2hM-Lp-Kfd"/>
+                                <constraint firstAttribute="height" constant="30" id="XOB-Gu-QBS"/>
+                                <constraint firstAttribute="width" constant="234" id="ndm-Mz-LCU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="2hM-Lp-Kfd"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RIF-OA-xJ9" secondAttribute="trailing" id="5ib-E2-ur9"/>
+                        <constraint firstItem="TSW-iH-R5O" firstAttribute="leading" secondItem="YSx-BM-83W" secondAttribute="leading" constant="8" id="62H-LS-EdZ"/>
+                        <constraint firstAttribute="bottom" secondItem="RIF-OA-xJ9" secondAttribute="bottom" id="Ape-PP-GGB"/>
+                        <constraint firstItem="Xe8-gQ-4Sx" firstAttribute="leading" secondItem="TSW-iH-R5O" secondAttribute="leading" id="CMi-yi-Wqv"/>
+                        <constraint firstItem="Xe8-gQ-4Sx" firstAttribute="trailing" secondItem="TSW-iH-R5O" secondAttribute="trailing" id="CUf-of-tic"/>
+                        <constraint firstItem="RIF-OA-xJ9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TSW-iH-R5O" secondAttribute="trailing" constant="1" id="aem-To-GKK"/>
+                        <constraint firstItem="Xe8-gQ-4Sx" firstAttribute="top" secondItem="TSW-iH-R5O" secondAttribute="bottom" id="bh1-GI-VGK"/>
+                        <constraint firstItem="RIF-OA-xJ9" firstAttribute="top" secondItem="YSx-BM-83W" secondAttribute="top" id="fGv-FN-3fR"/>
+                        <constraint firstItem="RIF-OA-xJ9" firstAttribute="leading" secondItem="TSW-iH-R5O" secondAttribute="trailing" constant="8" id="hFR-nD-5aN"/>
+                        <constraint firstItem="Xe8-gQ-4Sx" firstAttribute="top" secondItem="TSW-iH-R5O" secondAttribute="bottom" id="nkk-Po-cVP"/>
+                        <constraint firstAttribute="bottom" secondItem="Xe8-gQ-4Sx" secondAttribute="bottom" id="sEi-XW-7lt"/>
+                        <constraint firstItem="TSW-iH-R5O" firstAttribute="top" secondItem="YSx-BM-83W" secondAttribute="top" id="x3z-OR-tw5"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bh1-GI-VGK"/>
+                            <exclude reference="aem-To-GKK"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YSx-BM-83W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ilb-d3-SA1"/>
+                <constraint firstAttribute="trailing" secondItem="YSx-BM-83W" secondAttribute="trailing" id="Ju9-PA-9ZR"/>
+                <constraint firstItem="YSx-BM-83W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UiY-2I-W4A"/>
+                <constraint firstAttribute="bottom" secondItem="YSx-BM-83W" secondAttribute="bottom" id="ajK-8B-bP0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="goBtn" destination="RIF-OA-xJ9" id="Yyf-DK-Uzv"/>
+                <outlet property="pinLocationLabel" destination="Xe8-gQ-4Sx" id="LhG-ED-Nfm"/>
+                <outlet property="pinNameLabel" destination="TSW-iH-R5O" id="hE6-0D-Rt8"/>
+            </connections>
+            <point key="canvasLocation" x="428" y="489"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_nav_arrow_right" width="75" height="75"/>
+    </resources>
+</document>
